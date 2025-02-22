@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elbruz Moving</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        img{
+            height: 150px;
+            width: 200px;
+         float: left;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+            padding: 5px;
+            background-color:blueviolet;
+        }
+
+        header {
+            background-color:blueviolet;
+            color:lightcoral;
+            padding: 50px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            background-color:lightcoral;
+            color: orange;
+            padding:8px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        nav a{
+            color:slateblue;
+            text-decoration:lightcoral;
+            padding: 8px;;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        footer {
+            position: relative;
+            background-color: orchid;
+            min-height: fit-content;
+            color: powderblue;
+            display: flex;
+            justify-content: center;
+            bottom: 0;
+            width:100% ;
+        }
+        footer h2{
+            color: aqua;
+        }
+        .row{
+            display:flex;
+            flex: wrap;
+            gap: 10px;
+
+        }
+        h2{
+            color: lightcoral;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        section:hover{
+            color:orange;
+            box-shadow: inset;
+        }
+        .container{
+            width: 500px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            cursor: auto;
+            font-size: 0cqmax;
+        }
+        .icons i{
+            color: aquamarine;
+        }
+        .icons i :hover{
+            color: orange;
+            scale: 1.05;
+            transition: 0.5s all ease-in-out;
+        }
+        footer ul{
+            margin-inline: 30px;
+            color: azure;
+            list-style: none;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: aqua;
+        }
+        footer ul li a:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="WebDev/1-Web-Dev-Fundamentals/delivery_truck.png" alt="logo">
+        <h1>Elbruz Moving</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#"class="nav-button">Get a Quote</a>
+        <a href="#Login">Login</a>
+        <a href="#Sign">Sign Up</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Elbruz Moving</h2>
+        <p>Make your move stress-free with our professional moving services.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Residential Moving</li>
+            <li>Commercial Moving</li>
+            <li>Packing and Unpacking</li>
+            <li>Storage Solutions</li>
+            <li>Long Distance Moving</li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing reliable and efficient moving services to our clients.
+    Through many years of experience we can guarantee top knotch moving experience.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for a quote or any inquiries.</p>
+        <!-- Add a contact form or contact information here -->
+    </section>
+    <footer>
+        <div class="container">
+            <h2>More Info</h2>
+            <div class="row">
+                <ul>
+                    <li><strong>General:</strong></li>
+                    <li><a href="#">More About Us</a></li>
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">Vehicle Sizes</a></li>
+
+                </ul>
+                <ul>
+                    <li><strong>DOCS:</strong></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <div class="icons">
+                    <a href="https://www.facebook.com"> <i class="fab fa-facebook.com"></i></a>
+                    <a href="https://X.com"><i class="fab fa-X"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+
+                </div>
+
+
+            </div>
+            <div><p>&copy; 2023 Elbruz Moving LLC. All rights reserved.</p></div>
+        </div>
+    </footer>
+</body>
+
+</html>
